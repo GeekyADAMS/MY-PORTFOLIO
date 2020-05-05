@@ -3,7 +3,7 @@
         <img src="~@/assets/images/logos/my-logo.svg" alt="Logo" id="logo">
         <nav>
             <ul class="flex-row mouse mouse-point">
-                <li class="mouse-point"><a href="#about" class="mouse-point hindu">Skills</a></li>
+                <li class="mouse-point"><a href="#scroll-container" class="mouse-point hindu">Skills</a></li>
                 <li class="mouse-point"><a href="" class="mouse-point hindu">Portfolio</a></li>
                 <li class="mouse-point"><a href="" class="mouse-point hindu">Contact</a></li>
             </ul>

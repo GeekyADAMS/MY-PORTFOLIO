@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container viewport">
     <div class="flex-col a-c fixed socials">
       <img src="~@/assets/images/icons/linkedin.svg" alt="linkedin icon">
       <img src="~@/assets/images/icons/twitter.svg" alt="twitter icon">
@@ -15,91 +15,27 @@
 import Hero from '~/components/Hero.vue'
 import About from '~/components/About.vue'
 
-const html = document.documentElement
-const body = document.body
-
-const scroller = {
-  target: document.querySelector('#scroll-container'),
-  ease: 0.05,
-  endY: 0,
-  y: 0,
-  resizeRequest: 1,
-  scrollRequest: 0
-}
-
-let requestId = null
-window.addEventListener('load', onLoad)
-
-function onLoad () {
-  updateScroller()
-  window.focus()
-  window.addEventListener('resize', onResize)
-  document.addEventListener('scroll', onScroll)
-}
-
-function updateScroller () {
-  const resized = scroller.resizeRequest > 0
-
-  if (resized) {
-    const height = scroller.target.clientHeight
-    body.style.height = height + 'px'
-    scroller.resizeRequest = 0
-  }
-
-  const scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0
-  scroller.endY = scrollY
-  scroller.y += (scrollY - scroller.y) * scroller.ease
-
-  if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-    scroller.y = scrollY
-    scroller.scrollRequest = 0
-  }
-
-  requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null
-}
-
-function onScroll () {
-  scroller.scrollRequest++
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller)
-  }
-}
-
-function onResize () {
-  scroller.resizeRequest++
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller)
-  }
-}
-
 export default {
   components: {
     Hero,
     About
+  },
+  created () {
   }
 }
 </script>
 
 <style>
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+p::selection{
+  background: var(--pink);
+}
 button:focus{
   outline: none;
 }
-  .socials>div{
-    height: 6rem;
-    width: 2px;
-  }
-  .socials>img{
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-bottom: .5rem;
-  }
-  .socials>img:hover{
-    color: var(--pink);
-  }
-  .socials{
-    bottom: 0;
-    left: 1.5rem;
-  }
   .green-line-1{
     background: var(--bright-green);
   }
@@ -108,7 +44,33 @@ button:focus{
   }
   body{
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
+    overflow-y: scroll;
     cursor: url('~@/assets/images/icons/custom-mouse-32.svg'), auto;
+    scroll-behavior: smooth;
+    background: var(--purple);
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 25px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, var(--light-purple) 35%, var(--bright-green) 100%);
+    border-radius: 50px;
+    height: 40px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, var(--light-purple) 35%, var(--bright-green) 100%);
   }
 </style>

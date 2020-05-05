@@ -209,6 +209,12 @@
 .t-center{
     text-align: center;
 }
+.tip-left{
+  text-align: left;
+}
+.t-right{
+  text-align: right;
+}
 .white{
   color: white;
 }
@@ -293,7 +299,9 @@
 .point{
   cursor: pointer;
 }
-
+.h-auto{
+  height: auto;
+}
 .h100p{
   height: 100%;
 }
@@ -682,6 +690,13 @@
 .no-select{
   user-select: none;
 }
+.no-drag{
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  user-drag: none;
+  user-select: none;
+}
+
 .transparent{
   background: transparent;
 }
@@ -734,6 +749,24 @@
   width: 95vw;
 }
 
+.socials>div{
+  height: 6rem;
+  width: 2px;
+}
+.socials>img{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-bottom: .5rem;
+}
+.socials>img:hover{
+  color: var(--pink);
+  cursor: url('~@/assets/images/icons/custom-mouse-point.svg'), auto;
+}
+.socials{
+  bottom: 0;
+  left: 1.5rem;
+}
+
 @keyframes move {
   0%   { transform: scale(1)   translate(10px, -30px); }
   38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
@@ -744,6 +777,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .ml-5-m{
+    margin-left: 5rem;
+  }
   .m-100{
     width: 100vw;
   }

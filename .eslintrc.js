@@ -13,5 +13,11 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'no-trailing-spaces': [
+      'error', { 
+        'skipBlankLines': true,
+        'ignoreComments': true
+      }
+    ]
   }
 }
