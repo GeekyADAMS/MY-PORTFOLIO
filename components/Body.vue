@@ -1,5 +1,18 @@
 <template>
-    <div class="w100 flex-col a-c-n about h-auto scroll-container" id="scroll-container">
+    <div class="w100 flex-col a-c-n about h-auto" id="about">
+        <div class="cursor">
+            <div class="cursor__ball cursor__ball--big ">
+                <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+                </svg>
+            </div>
+            
+            <div class="cursor__ball cursor__ball--small">
+                <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+                </svg>
+            </div>
+        </div>
         <div class="flex-col a-c fixed socials">
             <img src="~@/assets/images/icons/linkedin.svg" alt="linkedin icon">
             <img src="~@/assets/images/icons/twitter.svg" alt="twitter icon">
@@ -22,7 +35,7 @@
             </div>
         </div>
 
-        <div class="flex-row w70 a-c-n space-btw wrap skill-sect">
+        <div class="flex-row w70 a-c-n space-btw wrap skill-sect" id="skills">
             <div class="flex-col">
                 <div class="flex-col">
                     <h2 class="h-color no-select"><span class="satisfy" style="font-size: .8rem;">02. </span><span class="anonymous" style="font-size: 1.2rem;"> SKILLS</span></h2>
@@ -35,19 +48,23 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-col a-c">
-                <img src="~@/assets/images/mockups/UI-Preview.svg" alt="Figma UI Mockup" class="skill-preview no-drag animated fadeInRight" v-if="profile.skills[0].active" data-tilt>
-                <img src="~@/assets/images/mockups/js-preview.svg" alt="Javascript Code" class="skill-preview no-drag animated fadeInRight" v-if="profile.skills[1].active" data-tilt>
-                <img src="~@/assets/images/mockups/vue-preview.svg" alt="Vue Code" class="skill-preview no-drag animated fadeInRight" v-if="profile.skills[2].active" data-tilt>
-                <img src="~@/assets/images/mockups/Node-preview.svg" alt="NodeJS Code" class="skill-preview no-drag animated fadeInRight" v-if="profile.skills[3].active" data-tilt>
-                <img src="~@/assets/images/mockups/html-preview.svg" alt="HTML Code" class="skill-preview no-drag animated fadeInRight" v-if="profile.skills[4].active" data-tilt>
-                <img src="~@/assets/images/mockups/Python-Preview.svg" alt="Python Code" class="skill-preview no-drag animated fadeInRight" v-if="profile.skills[5].active" data-tilt>
+            <div class="flex-col a-c mb-1">
+                <img src="~@/assets/images/mockups/UI-Preview.svg" alt="Figma UI Mockup" class="skill-preview no-drag animated fadeInRight mouse-focus" v-if="profile.skills[0].active" data-tilt>
+                <img src="~@/assets/images/mockups/js-preview.svg" alt="Javascript Code" class="skill-preview no-drag animated fadeInRight mouse-focus" v-if="profile.skills[1].active" data-tilt>
+                <img src="~@/assets/images/mockups/vue-preview.svg" alt="Vue Code" class="skill-preview no-drag animated fadeInRight mouse-focus" v-if="profile.skills[2].active" data-tilt>
+                <img src="~@/assets/images/mockups/Node-preview.svg" alt="NodeJS Code" class="skill-preview no-drag animated fadeInRight mouse-focus" v-if="profile.skills[3].active" data-tilt>
+                <img src="~@/assets/images/mockups/html-preview.svg" alt="HTML Code" class="skill-preview no-drag animated fadeInRight mouse-focus" v-if="profile.skills[4].active" data-tilt>
+                <img src="~@/assets/images/mockups/Python-Preview.svg" alt="Python Code" class="skill-preview no-drag animated fadeInRight mouse-focus" v-if="profile.skills[5].active" data-tilt>
             </div>
         </div>
+
+        <Portfolio />
     </div>
 </template>
 
 <script>
+import Portfolio from '~/components/Portfolio.vue'
+
 export default {
   data () {
     return {
@@ -89,6 +106,9 @@ export default {
       })
       this.profile.skills[index].active = true
     }
+  },
+  components: {
+    Portfolio
   }
 }
 </script>
@@ -131,41 +151,56 @@ export default {
     height: 15px;
     z-index: 5;
 }
-    .g-line-2{
-        width: 6rem;
-        height: 2px;
-    }
-    h2{
-        font-size: 1.5rem;
-        font-weight: 600;
-        z-index: 10;
-    }
+.g-line-2{
+    width: 6rem;
+    height: 2px;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 10;
+}
 
-    .h-color{
-        color: #5918DF;
-    }
-    .dp{
-        width: 25rem;
-        height: 75rem;
-    }
-    .about{
-        background: var(--darker-purple);
-        z-index: 100;
-    }
-    .scroll-container {
-        border-radius: 30px 30px 0 0;
-        position: absolute;
-        overflow: hidden;
-        height: fit-content;
-        z-index: 10;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-    }
+.h-color{
+    color: #5918DF;
+}
+.dp{
+    width: 25rem;
+    height: 75rem;
+}
+.about{
+    background: var(--darker-purple);
+    z-index: 1000;
+    border-radius: 30px 30px 0 0;
+    margin-top: 100vh;
+}
+.scroll-container {
+    position: absolute;
+    overflow: hidden;
+    height: fit-content;
+    z-index: 10;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
 
+
+body .cursor {
+pointer-events: none;
+}
+body .cursor__ball {
+position: fixed;
+top: 0;
+left: 0;
+mix-blend-mode: difference;
+z-index: 1000;
+}
+body .cursor__ball circle {
+fill: #f7f8fa;
+}
 </style>

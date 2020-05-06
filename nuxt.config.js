@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Adams Abdulhakeem (GeekyAdams) | Web Portfolio',
+    title: 'Adams Abdulhakeem (GeekyAdams) | Software Developer | Web Portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -31,11 +31,13 @@ export default {
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
+      { src: '/modules/smoothScroll.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js' },
       { src: '/modules/pace.min.js', 'data-pace-options': { "ajax": false } },
       { src: 'https://cdn.rawgit.com/rikmms/progress-bar-4-axios/0a3acf92/dist/index.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js', body: true },
-      { type: 'text/javascript', src: '/modules/smooth-scroll.js', body: true }
+      { type: 'text/javascript', src: '/modules/mouse-negative.js', body: true },
+      { type: 'text/javascript', src: '/modules/custom.js', body: true }
     ]
   },
   /*
@@ -46,12 +48,16 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/css/chillax.css'
+    '~/assets/css/chillax.css',
+    'aos/dist/aos.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
+  plugins: [{
+    src: '~/plugins/aos.js',
+    mode: 'client'
+    }
   ],
   /*
   ** Nuxt.js dev-modules

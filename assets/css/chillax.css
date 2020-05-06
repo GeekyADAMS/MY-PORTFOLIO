@@ -37,14 +37,19 @@
 .montserrat{
   font-family: 'Montserrat', sans-serif;
 }
-
+.curved-edge{
+  border-radius: 10px;
+}
+.curved-edge-5{
+  border-radius: 5px;
+}
 .mouse{
   cursor: url('~@/assets/images/icons/custom-mouse-32.svg'), auto;
 }
 .mouse-point:hover{
   cursor: url('~@/assets/images/icons/custom-mouse-point.svg'), auto;
 }
-.mouse-focus{
+.mouse-focus:hover{
   cursor: url('~@/assets/images/icons/custom-mouse-focus-40.svg'), auto;
 }
 .sticky{
@@ -54,6 +59,10 @@
 .flex-row{
   display: flex;
   flex-direction: row;
+}
+.flex-row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
 }
 .wrap{
   flex-wrap: wrap;
@@ -371,6 +380,7 @@
 .scroll-y::-webkit-scrollbar{
   display: none;
 }
+.
 .mt-auto{
   margin-top: auto;
 }
@@ -392,8 +402,14 @@
 .mt-8p5{
   margin-top: 8.5rem
 }
+.mt-1p5{
+  margin-top: 1.5rem
+}
 .red{
   color: rgb(221, 54, 42);
+}
+.mt-n3{
+  margin-top: -3rem;
 }
 .mt-p5{
   margin-top: .5rem;
@@ -415,6 +431,9 @@
 }
 .mt-7{
   margin-top: 7rem;
+}
+.mt-n7{
+  margin-top: -7rem;
 }
 .ml-13{
   margin-left: 13rem;
@@ -448,6 +467,9 @@
 }
 .ml-auto{
   margin-left: auto;
+}
+.mr-auto{
+  margin-right: auto;
 }
 .mr-p5{
   margin-right: .5rem;
@@ -734,6 +756,9 @@
 .fixed{
   position: fixed;
 }
+.relative{
+  position: relative;
+}
 .blob {
   position: absolute;
   top: 0;
@@ -799,6 +824,9 @@
   }
   .s-w100{
     width: 100vw;
+  }
+  .s-w100p{
+    width: 100%;
   }
   .s-w95{
     width: 95vw;
