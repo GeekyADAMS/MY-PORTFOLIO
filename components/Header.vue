@@ -1,11 +1,11 @@
 <template>
     <div class="flex-row a-c space-btw w90 mouse">
         <img src="~@/assets/images/logos/my-logo.svg" alt="Logo" id="logo">
-        <nav>
+        <nav class="">
             <ul class="flex-row mouse mouse-point">
-                <li class="mouse-point"><a href="#skills" class="mouse-point hindu">Skills</a></li>
-                <li class="mouse-point"><a href="" class="mouse-point hindu">Portfolio</a></li>
-                <li class="mouse-point"><a href="" class="mouse-point hindu">Contact</a></li>
+                <li class="mouse-point"><a href="#skills" class="mouse-point hindu hide-mobile">Skills</a></li>
+                <li class="mouse-point"><a href="https://drive.google.com/file/d/1h_P-IL2-Nkle5c_LHGMBROyeeCoVFAgv/view?usp=sharing" class="mouse-point hindu">Resume</a></li>
+                <li class="mouse-point"><a href="#contact" class="mouse-point hindu">Contact</a></li>
             </ul>
         </nav>
     </div>

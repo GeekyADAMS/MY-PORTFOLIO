@@ -1,6 +1,6 @@
 <template>
-    <div class="w100 flex-col portfolio">
-        <div class="flex-row a-c-n mt-5">
+    <div class="w100 flex-col portfolio" id="portfolio">
+        <div class="flex-row a-c-n mt-5 space-btm">
             <div class="g-line-5"></div>
             <h3 class="montserrat light-purple ml-1">Some selected projects</h3>
         </div>
@@ -10,106 +10,110 @@
         </div>
 
         <div class="w100 flex-col a-c">
-            <div class="flex-col a-n-c w90">
-                <div class="flex-row-reverse a-c mr-auto" data-aos="fade-right" data-aos-duration="1300">
+            <div class="flex-col a-n-c w90 s-w100 s-pad">
+                <div class="flex-row-reverse flex-col-m a-c mr-auto max-fit" data-aos="fade-right" data-aos-duration="1300">
                     <img src="~@/assets/images/mockups/Cheaplii-frame.svg" alt="Cheaplii store image" class="curved-edge mouse-focus cheaplii">
                     <div class="flex-col project-details-1" data-tilt>
-                        <span class="project-title light-purple montserrat">CHEAPLII STORE</span>
-                        <p class="project-desc hindu light-purple mt-1">
+                        <span class="project-title light-purple montserrat aligh-desc-1">CHEAPLII STORE</span>
+                        <p class="project-desc hindu light-purple mt-1 aligh-desc-1">
                             Cheaplii store is a market for store
                             owner and lets them foster and 
-                            manage their sales and inventories.
+                            manage their sales and inventories. Currently in build.
                         </p>
-                        <div class="proj-desc-ul mt-1 mb-1"></div>
-                        <p class="project-stacks hindu pink">
+                        <div class="proj-desc-ul mt-1 mb-1 aligh-desc-1"></div>
+                        <p class="project-stacks hindu pink aligh-desc-1">
                             NuxtJS,  NodeJS, MONGO DB
                         </p>
-                        <img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 mr-auto mouse-point">
+                        <img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 mr-auto mouse-point aligh-desc-1">
 
                     </div>
                 </div>
 
-                <div class="flex-row-reverse a-c ml-auto mt-5" data-aos="fade-left" data-aos-duration="1300">
+                <div class="flex-row-reverse  flex-col-m a-c ml-auto mt-5 max-fit" data-aos="fade-left" data-aos-duration="1300">
                     <img src="~@/assets/images/mockups/Travooler-frame.svg" alt="Travooler store image" class="curved-edge mouse-focus travooler">
                     <div class="flex-col project-details-1" data-tilt>
-                        <span class="project-title light-purple montserrat">TRAVOOLER</span>
-                        <p class="project-desc hindu light-purple mt-1">
+                        <span class="project-title light-purple montserrat aligh-desc-1">TRAVOOLER</span>
+                        <p class="project-desc hindu light-purple mt-1 aligh-desc-1">
                             Travooler is an online solution
                             that helps you handle the hassles
                             associated with seeking schooling and
-                            traveling opportunities abroad.
+                            traveling opportunities abroad. Preview available below.
                         </p>
-                        <div class="proj-desc-ul mt-1 mb-1"></div>
-                        <p class="project-stacks hindu pink">
+                        <div class="proj-desc-ul mt-1 mb-1 aligh-desc-1"></div>
+                        <p class="project-stacks hindu pink aligh-desc-1">
                             NuxtJS,  NodeJS, MONGO DB
                         </p>
-                        <img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point">
+                        <a href="https://travooler.now.sh" target="
+                        _blank"><img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point aligh-desc-1"></a>
                     </div>
                 </div>
 
-                <div class="flex-row a-c mr-auto ml-3 top-minus" data-aos="fade-right" data-aos-duration="1300">
-                    <img src="~@/assets/images/mockups/Patricia-frame.svg" alt="Patricia Card" class="mobile-proj">
-                    <div class="flex-col project-details-2" data-tilt>
-                        <span class="project-title light-purple montserrat t-right">PATRICIA CARD</span>
-                        <p class="project-desc hindu light-purple mt-1 ml-auto t-right">
+                <div class="flex-row flex-col-m a-c mr-auto ml-3 top-minus minus-top max-fit" data-aos="fade-right" data-aos-duration="1300">
+                    <img src="~@/assets/images/mockups/Patricia-frame.svg" alt="Patricia Card" class="mobile-proj moderate-frame">
+                    <div class="flex-col project-details-2 align-desc-2" data-tilt>
+                        <span class="project-title light-purple montserrat t-right  align-desc-2">PATRICIA CARD</span>
+                        <p class="project-desc hindu light-purple mt-1 ml-auto t-right align-desc-2">
                             Patricia Card is an online platform that allows the trading of digital currencies, as well as Gift Cards. Patricia offers a card debit card that can be used to withdraw digital currencies from any ATM.
                         </p>
-                        <div class="proj-desc-ul mt-1 mb-1"></div>
-                        <p class="project-stacks hindu pink t-right">
-                            Vue, Jquery,  NodeJS, MONGO DB
+                        <div class="proj-desc-ul mt-1 mb-1 align-desc-2"></div>
+                        <p class="project-stacks hindu pink t-right align-desc-2">
+                            Vue, Gridsome
                         </p>
-                        <img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point">
+                        <a href="https://mypatricia.co" target="
+                        _blank"><img src="~@/assets/images/icons/external-link.svg" alt="external link icon align-desc-2" class="link-icon mt-p5 ml-auto mouse-point project-link"></a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="w100 mobile flex-col a-c">
-            <span class="ml-auto montserrat --light-purple fade-1 no-select">MOBILE</span>
+            <span class="ml-auto montserrat --light-purple fade-1 no-select mobile-head s-w100">MOBILE</span>
 
-            <div class="flex-row a-c ml-3 top-minus w80 space-btw ">
+            <div class="flex-row a-c ml-3 top-minus minus-top-2 w80 space-btw flex-col-m">
 
-                <div class="flex-row a-c" data-aos="fade-right" data-aos-duration="1300">
+                <div class="flex-row a-c flex-col-m max-fit" data-aos="fade-right" data-aos-duration="1300">
                     <img src="~@/assets/images/mockups/Igzam-frame.svg" alt="Igzam Mobile UI" class="mobile-proj mt-n7">
                     
-                    <div class="flex-col project-details-2" data-tilt>
-                        <span class="project-title light-purple montserrat t-right">IGZAM APP</span>
-                        <p class="project-desc hindu light-purple mt-1 ml-auto t-right" style="font-size: 1rem; font-weight: 400">
+                    <div class="flex-col project-details-2 moderate-frame" data-tilt>
+                        <span class="project-title light-purple montserrat t-right align-desc-2">IGZAM APP</span>
+                        <p class="project-desc hindu light-purple mt-1 ml-auto t-right align-desc-2" style="font-size: 1rem; font-weight: 400">
                             Igzam App is an app concept to help students study better for exams. It brings all learning resource together and organises them in a very accessible way. Also provides forums for group study.
                             Still work in progress...
                         </p>
-                        <div class="proj-desc-ul mt-1 mb-1"></div>
-                        <p class="project-stacks hindu pink t-right">
+                        <div class="proj-desc-ul mt-1 mb-1 align-desc-2"></div>
+                        <p class="project-stacks hindu pink t-right align-desc-2">
                             Figma, Flutter, Firebase
                         </p>
-                        <img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point">
+                        <a href="https://github.com/softcoder404/Igzam.git" target="
+                        _blank"><img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point align-desc-2"></a>
                     </div>
                 </div>
 
-                <img src="~@/assets/images/mockups/Anchor line.svg" alt="Division line" class="mt-5 ml-2 mr-2">
+                <img src="~@/assets/images/mockups/Anchor line.svg" alt="Division line" class="mt-5 ml-2 mr-2 hide-mobile">
 
-                <div class="flex-row a-c" data-aos="fade-left" data-aos-duration="1300">
-                    <img src="~@/assets/images/mockups/Chowie-frame.svg" alt="Chowie Mobile UI" class="web-proj">
+                <div class="flex-row a-c flex-col-m max-fit" data-aos="fade-left" data-aos-duration="1300">
+                    <img src="~@/assets/images/mockups/Chowie-frame.svg" alt="Chowie Mobile UI" class="web-proj tt">
                     <div class="flex-col project-details-3" data-tilt>
-                        <span class="project-title light-purple montserrat ml-auto t-right">CHEAPLII STORE</span>
-                        <p class="project-desc hindu light-purple mt-1 ml-auto t-right" style="font-size: 1rem; font-weight: 400">
-                            Patricia Card is an online platform that allows the trading of digital currencies, as well as Gift Cards. Patricia offers a card debit card that can be used to withdraw digital currencies from any ATM.
+                        <span class="project-title light-purple montserrat ml-auto t-right align-desc-3">CHOWIE APP</span>
+                        <p class="project-desc hindu light-purple mt-1 ml-auto t-right align-desc-3" style="font-size: 1rem; font-weight: 400">
+                            This is a mobile app concept i designed, that helps  you manage you food stock (both in refrigerator and shelf) and also suggest what to cook and how to cook it based what you have.
                         </p>
-                        <div class="proj-desc-ul mt-1 mb-1"></div>
-                        <p class="project-stacks hindu pink t-right ml-auto">
-                            NuxtJS,  NodeJS, MONGO DB
+                        <div class="proj-desc-ul mt-1 mb-1 align-desc-3"></div>
+                        <p class="project-stacks hindu pink t-right ml-auto align-desc-3">
+                            Flutter - Coded By SoftCoder
                         </p>
-                        <img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point">
+                        <a href="https://github.com/softcoder404/CHOWie.git" target="
+                        _blank"><img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point align-desc-3"></a>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="flex-col w100 mt-n3 activities-container border-box">
+        <div class="flex-col w100 mt-n3 activities-container border-box s-mt-5">
             <div class="other-projects ml-auto flex-col">
-                <h3 class="montserrat light-purple ml-1">Some other activities</h3>
-                <div class="flex-row">
+                <h3 class="montserrat light-purple ml-1 no-select s-ml-3">Few other activities</h3>
+                <div class="flex-row s-ml-3">
                     <p class="light-purple satisfy mr-1 ml-1">Artcles</p>
                     <div class="g-line-p5"></div>
                     <p class="light-purple satisfy mr-1 ml-1">Freestyles</p>
@@ -118,11 +122,13 @@
                 </div>
             </div>
 
-            <div class="flex-row a-c space-btw wrap w100p card-sect">
-                <div class="card w30p s-w100p hide-overflow mb-2 curved-edge-5 mouse-focus" v-for="(activity, index) in activities" :key="index">
+            <div class="flex-row space-btw wrap flex-col-m w100p m-100 card-sect">
+                <div class="card w30p m-w80 hide-overflow mb-2 curved-edge-5 mouse-focus" v-for="(activity, index) in activities" :key="index">
                     <div class="flex-row a-c flex-links w100p space-btw">
-                        <img src="~@/assets/images/icons/link-2.svg" alt="" class="link-icon">
-                        <img src="~@/assets/images/icons/external-link.svg" alt="" class="link-icon">
+                        <a :href="activity.link" target="
+                        _blank"><img src="~@/assets/images/icons/link-2.svg" alt="" class="link-icon"></a>
+                        <a :href="activity.link" target="
+                        _blank"><img src="~@/assets/images/icons/external-link.svg" alt="" class="link-icon"></a>
                     </div>
                     <p class="w100p light-purple hindu activity-title mt-2">{{activity.title}}</p>
                     <p class="w100p light-purple hindu activity-desc mt-2">{{activity.desc}}</p>
@@ -143,25 +149,25 @@ export default {
       activities: [{
           title: 'Reactive Vue Checkout Component',
           desc: 'I made a quite popular Vue components for card payment checkout. Users are able to enter their details into an input field and watch it update live on the 3D Debit Card Component.',
-          link: '',
+          link: 'https://github.com/GeekyADAMS/FRONTEND-MAGICS/tree/master/Beautiful%20Payment%20Page%20Interaction%20with%20VueJs',
           tags: [ 'Vue', 'Medium', 'Payment' ]
         },
         {
           title: 'Design Right 1.0 & 2.0',
           desc: 'In conjuction with 5 other amazing Designer Experts, we were able to train about 150 students of the University of Ilorin in Product Designs and most of them are now crushing gigs as UI/UX Designers.',
-          link: '',
+          link: 'https://twitter.com/SDGilorin',
           tags: [ 'Figma', 'Adobe XD' ]
         },
         {
           title: 'Frontend Developer, IMAGIN',
           desc: 'I recently joined a team of individuals with the vision of changing the narrative of workspaces. I am currently crafting amazing user experience that will help realise our vision of digitalizing & virtualising workspaces.',
-          link: '',
+          link: 'https://imaginteam.com',
           tags: [ 'Frontend', 'NuxtJS', 'Startup' ]
         },
         {
           title: 'The Beginner\'s Guide to Deep Learning',
           desc: 'Deep Learning in its simplest form is just a branch of Machine learning that takes on learning representations from data that put emphasis on learning successive layers of increasingly meaningful representations...',
-          link: '',
+          link: 'https://medium.com/@drkeeminc/the-beginners-guide-to-deep-learning-1d1b9d71b869',
           tags: [ 'Python', 'Keras', 'DL' ]
         },
         {
@@ -183,6 +189,82 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 570px) {
+    .card-sect{
+        margin-left: -7.5rem;
+    }
+    .other-projects{
+        position: relative;
+        right: 2rem;
+    }
+    .card{
+        padding: .5rem;
+    }
+    .m-w80 {
+        width: 80vw
+    }
+    .s-mr-auto{
+        margin-right: auto;
+    }
+    .s-ml-3{
+        margin-left: -1.5rem;
+    }
+    .s-mt-5{
+        margin-top: 15rem;
+    }
+    .tt{
+        margin-right: 1.5rem;
+    }
+  .minus-top{
+      margin-top: 7rem;
+  }
+  .minus-top-2{
+      margin-top: 17rem;
+  }
+  .mobile-head{
+      position: relative;
+      top: 10rem;
+  }
+  .moderate-frame{
+      width: 20rem;
+      height: 35rem;
+  }
+  .portfolio{
+    position: relative;
+    top: 10rem;
+  }
+  .web>span, .mobile-head{
+      font-size: 8.5rem;
+      margin-top: 1.5rem;
+  }
+  .space-btm {
+      margin-bottom: 5rem;
+  }
+  .align-desc-2{
+      position: relative;   
+      left: 2rem;
+  }
+  .aligh-desc-1{
+    position: relative;   
+    top: -3rem;
+    right: 6.5rem;
+    float: left;
+ }
+ .hide-desktop{
+     display: block;
+ }
+ .align-desc-3{
+    position: relative;   
+    top: 18rem;
+    left: 7rem;
+  }
+  .max-fit{
+      max-width: 95vw;
+  }
+}
+.hide-desktop{
+    display: none;
+}
 .activity-title{
     font-size: 1.3rem;
     font-weight: 600;
@@ -224,9 +306,6 @@ export default {
 }
 .project-details-3{
     margin: -15rem 0 10rem -15rem;
-}
-.top-minus{
-    margin-top: -8rem;
 }
 .mobile-proj{
     width: 30rem;
@@ -279,10 +358,11 @@ h3{
     height: 1.5px;
     width: 10rem;
 }
-.portfolio{
+.portfolio{     
     background: #0F0326;
     z-index: 100;
     padding-bottom: 5rem;
+    z-index: 1500;
 }
 .web, .mobile{
     font-size: 15rem;

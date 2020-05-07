@@ -1,26 +1,8 @@
 <template>
     <div class="w100 flex-col a-c-n about h-auto" id="about">
-        <div class="cursor">
-            <div class="cursor__ball cursor__ball--big ">
-                <svg height="30" width="30">
-                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-                </svg>
-            </div>
-            
-            <div class="cursor__ball cursor__ball--small">
-                <svg height="10" width="10">
-                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-                </svg>
-            </div>
-        </div>
-        <div class="flex-col a-c fixed socials">
-            <img src="~@/assets/images/icons/linkedin.svg" alt="linkedin icon">
-            <img src="~@/assets/images/icons/twitter.svg" alt="twitter icon">
-            <img src="~@/assets/images/icons/github.svg" alt="github icon">
-            <div class="green-line-1" />
-        </div>
-        <div class="flex-row a-c-n space-btw wrap w80 mt-n5">
-            <img src="~@/assets/images/pictures/my-pic-lined.svg" alt="Picture of Adams Abdulhakeem" class="dp no-drag mouse-focus" draggable="false">
+
+        <div class="flex-row a-c-n space-btw wrap w80 mt-n10">
+            <img src="~@/assets/images/pictures/my-pic.svg" alt="Picture of Adams Abdulhakeem" class="dp no-drag mouse-focus" draggable="false">
             <div class="flex-col story-sect">
                 <div class="flex-row">
                     <div class="g-line-2"></div>
@@ -28,14 +10,14 @@
                 </div>
                 <img src="~@/assets/images/icons/accent 1.svg" alt="underline" class="ml-auto svg-line no-drag" draggable="false">
                 <p class="anonymous story-line mt-2 ml-auto">
-                    I am Nigeria (🇳🇬) based Web and Mobile App Developer who has spent the last few years crafting amazing digital products for small, medium and large scale businesses.
+                    I am a Nigeria (🇳🇬) based Web and Mobile App Developer who has spent the last couple of years crafting amazing digital products for small, medium and large scale businesses.
                     I am driven by growth and the number of smiles i put on client faces.
                 </p>
                 <p class="anonymous bright-green mouse-point flex-row a-c mt-3 ml-auto no-select story-cta">See Testimonials <img src="~@/assets/images/icons/arrow-right.svg"  class="ml-p5" alt="right arrow"></p>
             </div>
         </div>
 
-        <div class="flex-row w70 a-c-n space-btw wrap skill-sect" id="skills">
+        <div class="flex-row w70 a-c-n space-btw wrap skill-sect mt-5m" id="skills">
             <div class="flex-col">
                 <div class="flex-col">
                     <h2 class="h-color no-select"><span class="satisfy" style="font-size: .8rem;">02. </span><span class="anonymous" style="font-size: 1.2rem;"> SKILLS</span></h2>
@@ -59,12 +41,17 @@
         </div>
 
         <Portfolio />
+
+        <Contact />
+
+        <Footer />
     </div>
 </template>
 
 <script>
 import Portfolio from '~/components/Portfolio.vue'
-
+import Contact from '~/components/Contact.vue'
+import Footer from '~/components/Footer.vue'
 export default {
   data () {
     return {
@@ -108,12 +95,28 @@ export default {
     }
   },
   components: {
-    Portfolio
+    Portfolio,
+    Contact,
+    Footer
   }
 }
 </script>
 
 <style scoped>
+@media screen and (max-width: 570px) {
+  .mt-n10{
+    margin-top: -10rem;
+  }
+  .story-sect{
+    position: relative;
+    top: -18rem;
+  }
+  .skill-sect{
+    position: relative;
+    top: 8rem;
+    right: 1.5rem;
+  }
+}
 .skill-preview{
     max-width: 30rem;
     height: 30rem;
@@ -170,37 +173,12 @@ h2{
 }
 .about{
     background: var(--darker-purple);
-    z-index: 1000;
     border-radius: 30px 30px 0 0;
-    margin-top: 100vh;
-}
-.scroll-container {
     position: absolute;
-    overflow: hidden;
-    height: fit-content;
-    z-index: 10;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    top: 100vh;
+    z-index: 1000;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
-
-body .cursor {
-pointer-events: none;
-}
-body .cursor__ball {
-position: fixed;
-top: 0;
-left: 0;
-mix-blend-mode: difference;
-z-index: 1000;
-}
-body .cursor__ball circle {
-fill: #f7f8fa;
-}
 </style>
