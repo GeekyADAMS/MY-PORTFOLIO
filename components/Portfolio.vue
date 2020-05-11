@@ -172,7 +172,7 @@ export default {
         },
         {
           title: 'Deploying Nuxt/Vue/React Apps For Free On Vercel Using Now-CLI',
-          desc: 'One too many times, we are get stuck with deciding the best platforms to deploy our apps to during testing and production. Few of the many factors that affects this decision is Seemless deployment experience, trusted and secured platform, and most times, Cost. Vercel.com provides you facilities to deploy, preview and ship your web apps with zero configuration, automatic SSL, and global CDN at an absolute free cost.',
+          desc: 'One too many times, we are get stuck with deciding the best platforms to deploy our apps to during testing and production. Few of the many factors that affects this decision is Seemless deployment experience, trusted and secured platform, and most times, Cost....',
           link: 'https://code-with-geeky.hashnode.dev/how-to-deploy-your-nuxt-apps-for-free-on-vercel-using-now-cli-cka2ruk1k00rzdjs1c3vamynd',
           tags: [ 'Vercel', 'Nuxt', 'Article' ]
         },
