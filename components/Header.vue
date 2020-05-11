@@ -4,7 +4,7 @@
         <nav class="">
             <ul class="flex-row mouse mouse-point">
                 <li class="mouse-point"><a href="#skills" class="mouse-point hindu hide-mobile">Skills</a></li>
-                <li class="mouse-point"><a href="https://drive.google.com/file/d/1h_P-IL2-Nkle5c_LHGMBROyeeCoVFAgv/view?usp=sharing" class="mouse-point hindu">Resume</a></li>
+                <li class="mouse-point"><a href="https://drive.google.com/file/d/1U1fVJWyl0xiW4Wa48gNy66RDFhOB0Nhh/view?usp=sharing" class="mouse-point hindu">Resume</a></li>
                 <li class="mouse-point"><a href="#contact" class="mouse-point hindu">Contact</a></li>
             </ul>
         </nav>

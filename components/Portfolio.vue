@@ -171,10 +171,10 @@ export default {
           tags: [ 'Python', 'Keras', 'DL' ]
         },
         {
-          title: 'Chillax CSS',
-          desc: 'Having to cram class names for diferent CSS libraries can be a pain in the ass for Frontend Developers. So i came with the idea to unify these concepts into one that is very efficient and allows developers to guess class names with more than 80% chance of being correct. Included is an accompanying JS plugin for reactivity. Still a work in progress',
-          link: '',
-          tags: [ 'CSS', 'Javascript', 'Payment' ]
+          title: 'Deploying Nuxt/Vue/React Apps For Free On Vercel Using Now-CLI',
+          desc: 'One too many times, we are get stuck with deciding the best platforms to deploy our apps to during testing and production. Few of the many factors that affects this decision is Seemless deployment experience, trusted and secured platform, and most times, Cost. Vercel.com provides you facilities to deploy, preview and ship your web apps with zero configuration, automatic SSL, and global CDN at an absolute free cost.',
+          link: 'https://code-with-geeky.hashnode.dev/how-to-deploy-your-nuxt-apps-for-free-on-vercel-using-now-cli-cka2ruk1k00rzdjs1c3vamynd',
+          tags: [ 'Vercel', 'Nuxt', 'Article' ]
         },
         {
           title: 'Global Device Detection in Vue with VueX',

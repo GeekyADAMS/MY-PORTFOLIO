@@ -10,7 +10,7 @@
                 </div>
                 <img src="~@/assets/images/icons/accent 1.svg" alt="underline" class="ml-auto svg-line no-drag" draggable="false">
                 <p class="anonymous story-line mt-2 ml-auto">
-                    I am a Nigeria (🇳🇬) based Web and Mobile App Developer who has spent the last couple of years crafting amazing digital products for small, medium and large scale businesses.
+                    I am a Nigerian (🇳🇬) based Web and Mobile App Developer who has spent the last couple of years, crafting amazing digital products for small, medium and large scale businesses.
                     I am driven by growth and the number of smiles i put on client faces.
                 </p>
                 <p class="anonymous bright-green mouse-point flex-row a-c mt-3 ml-auto no-select story-cta">See Testimonials <img src="~@/assets/images/icons/arrow-right.svg"  class="ml-p5" alt="right arrow"></p>

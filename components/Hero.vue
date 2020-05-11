@@ -14,20 +14,25 @@
             </div>
         </div>
         <Header />
-        <div class="hero-texts flex-row flex-col-m w95 h100 ml-13 ml-5-m mt-5 space-btw">
+        <div class="hero-texts flex-row flex-col-m w95 h100 ml-13 ml-5-m mt-3 space-btw">
             <div class="flex-col">
                 <h1 class="montserrat no-select" id="hero-title">
-                    <span class="white" style="z-index:50;">Web &<br>Mobile Dev.</span><br>
-                    <span class="pink" style="z-index:10;">UI Designer.</span><br>
-                    <span class="bright-green" style="z-index:5;">Project<br>Manager.</span>
+                    <span class="white" style="z-index:50; margin-bottom: 15rem;">Web &<br>Mobile Dev.</span><br>
                 </h1>
-                <p class="hindu white mt-3 desc-text">Hi there. You are awesome and i am, well, i am Adams. <wbr> Building the next $billion <span class="pink">DODO inspired solutions.</span></p>
+                <h1 class="montserrat no-select mt-2" id="hero-title">
+                    <span class="pink mb-2" style="z-index:10; line-height: 1.8rem;">UI Designer.</span><br>
+                </h1>
+                <h1 class="montserrat no-select mt-2" id="hero-title">
+                    <span class="bright-green" style="z-index:5;line-height: 1.8rem;">Project<br>Manager.</span><br>
+                </h1>
+                <p class="hindu white mt-4 desc-text">Hi there. You are awesome and i am, well, i am Adams. <wbr> Building the next $billion <span class="pink">DODO inspired solutions.</span></p>
 
                 <div class="flex-row a-c-n hero-btns mt-3">
                     <div class="hindu fade-9 round-edge-btn pink-bg flex-row pad-all-btn contact-btn mouse-focus hoverable" @click="playIntro()"><span style="font-size: 1.1rem;">Hear me out</span> <img src="~@/assets/images/icons/play-circle.svg" alt="arrow mouse-focus" class="ml-1 scale-on-hover"></div>
                     <a href="#about" class=""><img src="~@/assets/images/icons/down-arrow-btn.svg" alt="down-arrow" class="ml-2 down-btn mouse-focus"></a>
                 </div>
                 <audio src="/audio/Intro.m4a" ref="intro"></audio>
+
             </div>
             <img src="~@/assets/images/illustrations/Coding 1.svg" alt="" class="no-select no-drag" data-aos="fade-up">
         </div>
@@ -89,7 +94,7 @@ fill: #f7f8fa;
         font-weight: 500;
     }
     .hero{
-        background: var(--purple);
+        background: #753ff6;
         top: 0;
         z-index: -99;
     }
