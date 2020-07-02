@@ -35,7 +35,7 @@
   font-family: 'Anonymous Pro', monospace;
 }
 .montserrat{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .curved-edge{
   border-radius: 10px;
@@ -219,7 +219,9 @@
 .Poppins{
   font-family: 'Gilroy-bold', 'Josefin Sans', Raleway, Arial;
 }
-
+.bold{
+  font-weight: 900;
+}
 .t-center{
     text-align: center;
 }

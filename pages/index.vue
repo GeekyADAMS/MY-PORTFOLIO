@@ -70,14 +70,14 @@ button:focus{
        background: transparent;
     }
     ::-webkit-scrollbar {
-        width: 10px;
+      width: 10px;
     } 
 @media screen and (max-width: 600px) {
     ::-webkit-scrollbar {
       width: 0px;
     }
-      ::-webkit-scrollbar-track {
-        display: none;
+    ::-webkit-scrollbar-track {
+      display: none;
     }
 }
   

@@ -32,9 +32,9 @@
                 <div class="flex-row-reverse  flex-col-m a-c ml-auto mt-5 max-fit" data-aos="fade-left" data-aos-duration="1300">
                     <img src="~@/assets/images/mockups/Travooler-frame.svg" alt="Travooler store image" class="curved-edge mouse-focus travooler">
                     <div class="flex-col project-details-1" data-tilt>
-                        <span class="project-title light-purple montserrat aligh-desc-1">TRAVOOLER</span>
+                        <span class="project-title light-purple montserrat aligh-desc-1">StudySpace</span>
                         <p class="project-desc hindu light-purple mt-1 aligh-desc-1">
-                            Travooler is an online solution
+                            StudySpaceis an online solution
                             that helps you handle the hassles
                             associated with seeking schooling and
                             traveling opportunities abroad. Preview available below.
@@ -43,7 +43,7 @@
                         <p class="project-stacks hindu pink aligh-desc-1">
                             NuxtJS,  NodeJS, MONGO DB
                         </p>
-                        <a href="https://travooler.now.sh" target="
+                        <a href="https://studyspace.ca" target="
                         _blank"><img src="~@/assets/images/icons/external-link.svg" alt="external link icon" class="link-icon mt-p5 ml-auto mouse-point aligh-desc-1"></a>
                     </div>
                 </div>
@@ -122,20 +122,25 @@
                 </div>
             </div>
 
-            <div class="flex-row space-btw wrap flex-col-m w100p m-100 card-sect">
-                <div class="card w30p m-w80 hide-overflow mb-2 curved-edge-5 mouse-focus" v-for="(activity, index) in activities" :key="index">
-                    <div class="flex-row a-c flex-links w100p space-btw">
-                        <a :href="activity.link" target="
-                        _blank"><img src="~@/assets/images/icons/link-2.svg" alt="" class="link-icon"></a>
-                        <a :href="activity.link" target="
-                        _blank"><img src="~@/assets/images/icons/external-link.svg" alt="" class="link-icon"></a>
-                    </div>
-                    <p class="w100p light-purple hindu activity-title mt-2">{{activity.title}}</p>
-                    <p class="w100p light-purple hindu activity-desc mt-2">{{activity.desc}}</p>
+            <div class="flex-row space-btw wrap flex-col-m w100p m-100 card-sect section" id="smooth-scroll-wrapper">
 
-                    <div class="flex-row  mt-auto">
-                        <p class="pink anonymous activity-tag mr-1" v-for="tag in activity.tags" :key="tag">{{tag}}</p>
+                <div class="b-card w30p m-w80 hide-overflow mb-2 mouse-focus flex-col a-c" v-for="(activity, index) in activities" :key="index" @mouseover="showTrace(index)" @mouseout="hideTrace(index)">
+                    <div class="w100p 100p card curved-edge-5 ">
+                        <div class="flex-row a-c flex-links w100p space-btw">
+                            <a :href="activity.link" target="
+                            _blank"><img src="~@/assets/images/icons/link-2.svg" alt="" class="link-icon"></a>
+                            <a :href="activity.link" target="
+                            _blank"><img src="~@/assets/images/icons/external-link.svg" alt="" class="link-icon"></a>
+                        </div>
+                        <p class="w100p light-purple hindu activity-title mt-2">{{activity.title}}</p>
+                        <p class="w100p light-purple hindu activity-desc mt-2">{{activity.desc}}</p>
+
+                        <div class="flex-row  mt-auto">
+                            <p class="pink anonymous activity-tag mr-1" v-for="tag in activity.tags" :key="tag">{{tag}}</p>
+                        </div>
                     </div>
+
+                    <div class="stack-trace w80p" :ref="'trace'+index"></div>
                 </div>
             </div>
         </div>
@@ -184,6 +189,14 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    showTrace (index) {
+      this.$refs['trace'+index][0].style.display = 'flex'
+    },
+    hideTrace (index) {
+      this.$refs['trace'+index][0].style.display = 'none'
+    }
   }
 }
 </script>
@@ -194,8 +207,10 @@ export default {
         margin-left: -7.5rem;
     }
     .other-projects{
-        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
         right: 2rem;
+        top: 0;
     }
     .card{
         padding: .5rem;
@@ -278,6 +293,13 @@ export default {
 .activity-desc{
     font-size: 1rem; 
 }
+
+.stack-trace{
+    height: 15px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid var(--light-purple);
+    display: none;
+}
 .card{
     height: 30rem;
     background: #402F79;
@@ -285,10 +307,17 @@ export default {
     padding: 1.5rem;
 }
 .card:hover{
+    background: transparent;
+    border: 1px solid var(--light-purple);
+}
+.b-card{
+    transition: transform .3s ease-in;
+}
+.b-card:hover{
     transform: translateY(-10px);
 }
 .activities-container{
-    padding: 0 10rem
+    padding: 0 10rem;
 }
 .card-sect{
     margin-top: 10rem;
@@ -303,6 +332,13 @@ export default {
 .link-icon{
     width: 25px;
     height: 25px;
+}
+.other-projects{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 2rem;
+    background: var(--darker-purple);
 }
 .project-details-3{
     margin: -15rem 0 10rem -15rem;

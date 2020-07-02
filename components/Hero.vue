@@ -16,8 +16,9 @@
         <Header />
         <div class="hero-texts flex-row flex-col-m w95 h100 ml-13 ml-5-m mt-3 space-btw">
             <div class="flex-col">
-                <h1 class="montserrat no-select" id="hero-title">
-                    <span class="white" style="z-index:50; margin-bottom: 15rem;">Web &<br>Mobile Dev.</span><br>
+
+                <h1 class="montserrat no-select bold" id="hero-title">
+                    <span class="gb" style="z-index:50; margin-bottom: 15rem;">Web &<br>Mobile Dev.</span><br>
                 </h1>
                 <h1 class="montserrat no-select mt-2" id="hero-title">
                     <span class="pink mb-2" style="z-index:10; line-height: 1.8rem;">UI Designer.</span><br>
@@ -60,14 +61,14 @@ body .cursor {
 pointer-events: none;
 }
 body .cursor__ball {
-position: fixed;
-top: 0;
-left: 0;
-mix-blend-mode: difference;
-z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
 }
 body .cursor__ball circle {
-fill: #f7f8fa;
+    fill: #f7f8fa;
 }
     .desc-text{
         max-width: 100%;
@@ -94,9 +95,15 @@ fill: #f7f8fa;
         font-weight: 500;
     }
     .hero{
-        background: #753ff6;
+        background: #241d36;
         top: 0;
-        z-index: -99;
+        animation: mymove 20s ease infinite;
+    }
+
+    @keyframes mymove {
+        0% {background-color: #241d36;}
+        50% {background-color: #121212;}
+        100% {background-color: #241d36;}
     }
     .hero-texts>div>h1{
         font-weight: 700;
@@ -110,4 +117,23 @@ fill: #f7f8fa;
     .pink-bg{
         background: var(--pink);
     }
+
+.gb {
+  text-transform:uppercase;
+  color: transparent;
+    background: linear-gradient(to left, #ffffff, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799, #ffffff);
+  background-size: 1000px 100%;
+  animation: bg 25s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes bg {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 5000px;
+  }
+}
 </style>

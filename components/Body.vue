@@ -1,5 +1,5 @@
 <template>
-    <div class="w100 flex-col a-c-n about h-auto" id="about">
+    <div class="w100 flex-col a-c-n about h-auto   smooth-scroll-wrappe" id="about">
 
         <div class="flex-row a-c-n space-btw wrap w80 mt-n10">
             <img src="~@/assets/images/pictures/my-pic.svg" alt="Picture of Adams Abdulhakeem" class="dp no-drag mouse-focus" draggable="false">
