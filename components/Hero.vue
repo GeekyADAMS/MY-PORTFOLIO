@@ -17,16 +17,16 @@
         <div class="hero-texts flex-row flex-col-m w95 h100 ml-13 ml-5-m mt-3 space-btw">
             <div class="flex-col">
 
-                <h1 class="montserrat no-select bold" id="hero-title">
+                <h1 class="montserrat no-select bold" id="hero-title" data-aos="fade-down-right" data-aos-duration="1000">
                     <span class="gb" style="z-index:50; margin-bottom: 15rem;">Web &<br>Mobile Dev.</span><br>
                 </h1>
-                <h1 class="montserrat no-select mt-2" id="hero-title">
+                <h1 class="montserrat no-select mt-2" id="hero-title"  data-aos="fade-up" data-aos-duration="1200">
                     <span class="pink mb-2" style="z-index:10; line-height: 1.8rem;">UI Designer.</span><br>
                 </h1>
-                <h1 class="montserrat no-select mt-2" id="hero-title">
+                <h1 class="montserrat no-select mt-2" id="hero-title" data-aos="fade-up" data-aos-duration="1500">
                     <span class="bright-green" style="z-index:5;line-height: 1.8rem;">Project<br>Manager.</span><br>
                 </h1>
-                <p class="hindu white mt-4 desc-text">Hi there. You are awesome and i am, well, i am Adams. <wbr> Building the next $billion <span class="pink">DODO inspired solutions.</span></p>
+                <p class="hindu white mt-4 desc-text"  data-aos="fade-up" data-aos-duration="1700">Hi there. You are awesome and i am, well, i am Adams. <wbr> Building the next $billion <span class="pink">DODO inspired solutions.</span></p>
 
                 <div class="flex-row a-c-n hero-btns mt-3">
                     <div class="hindu fade-9 round-edge-btn pink-bg flex-row pad-all-btn contact-btn mouse-focus hoverable" @click="playIntro()"><span style="font-size: 1.1rem;">Hear me out</span> <img src="~@/assets/images/icons/play-circle.svg" alt="arrow mouse-focus" class="ml-1 scale-on-hover"></div>
@@ -35,7 +35,7 @@
                 <audio src="/audio/Intro.m4a" ref="intro"></audio>
 
             </div>
-            <img src="~@/assets/images/illustrations/Coding 1.svg" alt="" class="no-select no-drag" data-aos="fade-up">
+            <img src="~@/assets/images/illustrations/Coding 1.svg" alt="" class="no-select no-drag" data-aos="fade-up"  data-aos-duration="1600">
         </div>
     </div>
 </template>
@@ -121,7 +121,7 @@ body .cursor__ball circle {
 .gb {
   text-transform:uppercase;
   color: transparent;
-    background: linear-gradient(to left, #ffffff, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799, #ffffff);
+  background: linear-gradient(to left, #ffffff, #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #1e5799, #ffffff);
   background-size: 1000px 100%;
   animation: bg 25s linear infinite;
   background-clip: text;

@@ -9,7 +9,7 @@
                     <h2 class="h-color ml-auto no-select"><span class="satisfy" style="font-size: 1rem;">01. </span><span class="anonymous"> My Story</span></h2>
                 </div>
                 <img src="~@/assets/images/icons/accent 1.svg" alt="underline" class="ml-auto svg-line no-drag" draggable="false">
-                <p class="anonymous story-line mt-2 ml-auto">
+                <p class="montserrat story-line mt-2 ml-auto">
                     I am a Nigerian (🇳🇬) based Web and Mobile App Developer who has spent the last couple of years, crafting amazing digital products for small, medium and large scale businesses.
                     I am driven by growth and the number of smiles i put on client faces.
                 </p>

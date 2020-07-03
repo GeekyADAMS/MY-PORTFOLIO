@@ -1,5 +1,5 @@
 <template>
-    <div class="footer w100 flex-col a-c" id="footer">
+    <div class="footer w100 flex-col a-c" id="footer" data-aos="fade-up" data-aos-duration="1300">
         <p class="t-center ml-auto mr-auto light-purple mt-7 hindu" id="footer">
             Designed and  developed by me, <a href="https://www.twitter.com/CocaCoder" class="light-purple"><u>Abdulhakeem Adams</u></a>, pixel By pixel.<br>
             Voice-over by: <a href="https://instagram.com/keye_writes" class="light-purple"><u>Keye Writes</u></a><br>
