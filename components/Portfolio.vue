@@ -164,10 +164,10 @@ export default {
           tags: [ 'Figma', 'Adobe XD' ]
         },
         {
-          title: 'Frontend Developer, IMAGIN',
-          desc: 'I recently joined a team of individuals with the vision of changing the narrative of workspaces. I am currently crafting amazing user experience that will help realise our vision of digitalizing & virtualising workspaces.',
-          link: 'https://imaginteam.com',
-          tags: [ 'Frontend', 'NuxtJS', 'Startup' ]
+          title: '(FlashNotif) Vue Component Library',
+          desc: 'As a contribution to Open-Source in my own little way, i built a Vue Component Library which i call FlashNotif. It can be used show notifications to users on a website/app ased on user and system processes. It is highly customizable and has a an immersive vibration feature.',
+          link: 'https://www.npmjs.com/package/flash-notif',
+          tags: [ 'VueJS', 'Component Library', 'Open Source', 'NPM' ]
         },
         {
           title: 'The Beginner\'s Guide to Deep Learning',
