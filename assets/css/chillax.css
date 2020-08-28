@@ -6,6 +6,9 @@
   --pink: #FDCBBC;
   --bright-green: #3CEDCE;
 }
+
+
+
 .purple{
   color: var(--purple);
 }
@@ -316,7 +319,7 @@
   cursor: pointer;
 }
 .h-auto{
-  height: auto;
+  height: fit-content;
 }
 .h100p{
   height: 100%;

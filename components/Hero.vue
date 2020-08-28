@@ -26,7 +26,7 @@
                 <h1 class="montserrat no-select mt-2" id="hero-title" data-aos="fade-up" data-aos-duration="1500">
                     <span class="bright-green" style="z-index:5;line-height: 1.8rem;">Project<br>Manager.</span><br>
                 </h1>
-                <p class="hindu white mt-4 desc-text"  data-aos="fade-up" data-aos-duration="1700">Hi there. You are awesome and i am, well, i am Adams. <wbr> Building the next $billion <span class="pink">DODO inspired solutions.</span></p>
+                <p class="hindu white mt-4 desc-text"  data-aos="fade-up" data-aos-duration="1700">Hi there. You are awesome and i am, well, i am Adams. <br class="hide-mobile"> Building the next $billion <span class="pink">DODO inspired solutions.</span></p>
 
                 <div class="flex-row a-c-n hero-btns mt-3">
                     <div class="hindu fade-9 round-edge-btn pink-bg flex-row pad-all-btn contact-btn mouse-focus hoverable" @click="playIntro()"><span style="font-size: 1.1rem;">Hear me out</span> <img src="~@/assets/images/icons/play-circle.svg" alt="arrow mouse-focus" class="ml-1 scale-on-hover"></div>
